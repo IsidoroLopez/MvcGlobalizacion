@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>@ViewBag.Bienvenido</h1> @Html.Raw(ViewBag.Flag) @DateTime.Now.ToLongDateString()
+</div>
+

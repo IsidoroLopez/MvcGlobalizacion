@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+ 
+@using (Html.BeginForm())
+{ 
+<div>
+    <button type="submit" value="es-ES" name="cultura" class="btn btn-info" >Spanish</button>
+    <button type="submit" value="en-GB" name="cultura" class="btn btn-info">English</button>
+
+</div>
+}
+<div class="jumbotron">
+    <h1>@ViewBag.Bienvenido</h1> @Html.Raw(ViewBag.Flag) @DateTime.Now.ToLongDateString()
+    
+</div>
+<h3>@ViewBag.Symbol</h3>
+
